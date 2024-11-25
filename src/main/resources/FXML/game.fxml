@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<Pane xmlns:fx="http://javafx.com/fxml/1" 
+              fx:id = "root2" styleClass="pane" fx:controller = "Controller">
+	<!-- TODO Add Nodes -->
+	
+	<Button fx:id = "player1Deal" text = "Deal" layoutX = "100" layoutY = "600" onAction = "#dealCards" disable = "false"/>
+	<Button fx:id = "player1Play" text = "Play" layoutX = "200" layoutY = "600" onAction = "#playHand" disable = "true"/>
+	<Button fx:id = "player1Fold" text = "Fold" layoutX = "300" layoutY = "600" onAction = "#foldHand" disable = "true"/>
+
+	<Button fx:id = "player2Deal" text = "Deal" layoutX = "600" layoutY = "600" onAction = "#dealCards2" disable = "true"/>
+	<Button fx:id = "player2Play" text = "Play" layoutX = "700" layoutY = "600" onAction = "#playHand2" disable = "true"/>
+	<Button fx:id = "player2Fold" text = "Fold" layoutX = "800" layoutY = "600" onAction = "#foldHand2" disable = "true"/>
+
+    <TextArea fx:id ="putText" layoutX = "300" layoutY = "200" prefHeight = "300" prefWidth = "400"/>
+
+	<TextField fx:id ="p1Ante" text = "Ante Wager" layoutX = "100" layoutY = "575" prefWidth = "140" 
+					onMouseClicked = "#clearP1Ante"/>
+	<TextField fx:id ="p1PairPlus" text = "PairPlus Wager" layoutX = "250" layoutY = "575" prefWidth = "140" onMouseClicked = "#clearP1PairPlus"/>
+	<TextField fx:id ="p2Ante" text = "Ante Wager" layoutX = "600" layoutY = "575" prefWidth = "140" disable = "true"
+					onMouseClicked = "#clearP2Ante"/>
+	<TextField fx:id ="p2PairPlus" text = "PairPlus Wager" layoutX = "750" layoutY = "575" prefWidth = "140" disable = "true" onMouseClicked = "#clearP2PairPlus"/>
+
+	<Text fx:id = "p1" text = "" layoutX = "125" layoutY = "550"/>
+	<Text fx:id = "p2" text = "" layoutX = "225" layoutY = "550"/>
+	<Text fx:id = "p3" text = "" layoutX = "325" layoutY = "550"/>
+
+	<Text fx:id = "p21" text = "" layoutX = "625" layoutY = "550"/>
+	<Text fx:id = "p22" text = "" layoutX = "725" layoutY = "550"/>
+	<Text fx:id = "p23" text = "" layoutX = "825" layoutY = "550"/>
+
+	<Text fx:id = "d1" text = "" layoutX = "400" layoutY = "150"/>
+	<Text fx:id = "d2" text = "" layoutX = "500" layoutY = "150"/>
+	<Text fx:id = "d3" text = "" layoutX = "600" layoutY = "150"/>
+
+	<Text fx:id = "p1Cash" text = "\$100" layoutX = "100" layoutY = "675"/>
+	<Text fx:id = "p1AnteText" text = "Ante: $0" layoutX = "100" layoutY = "700"/>
+	<Text fx:id = "p1PairPlusText" text = "PP: $0" layoutX = "100" layoutY = "725"/>
+	<Text fx:id = "p1PlayText" text = "Play: $0" layoutX = "200" layoutY = "700"/>
+	<Text fx:id = "p2Cash" text = "\$100" layoutX = "600" layoutY = "675"/>
+	<Text fx:id = "p2AnteText" text = "Ante: $0" layoutX = "600" layoutY = "700"/>
+	<Text fx:id = "p2PairPlusText" text = "PP: $0" layoutX = "600" layoutY = "725"/>
+	<Text fx:id = "p2PlayText" text = "Play: $0" layoutX = "700" layoutY = "700"/>
+
+	<Text fx:id = "p1Label" text = "Player One" layoutX = "100" layoutY = "500"/>
+	<Text fx:id = "p2Label" text = "Player Two" layoutX = "725" layoutY = "500"/>
+	<Text fx:id = "dLabel" text = "Dealer" layoutX = "450" layoutY = "100"/>
+
+	<MenuBar fx:id = "menubar" visible = "true" layoutY="-1.0" prefHeight="30" prefWidth="1000">
+		<menus>
+			<Menu text="Exit">
+				<items>
+					<MenuItem fx:id = "exit" text = "Exit" onAction="#obtuseExitGame"/>
+				</items>
+			</Menu>
+			<Menu text = "Fresh Start">
+				<items>
+					<MenuItem fx:id="freshStart" text="Fresh Start" onAction="#resetGame"/>
+				</items>
+			</Menu>
+			<Menu text = "New Look">
+				<items>
+					<MenuItem fx:id="newLook" text = "New Look" onAction="#changeColors"/>
+				</items>
+			</Menu>
+		</menus>
+	</MenuBar>
+
+</Pane>
+

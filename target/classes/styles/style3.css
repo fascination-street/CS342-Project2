@@ -1,0 +1,66 @@
+.button {
+	-fx-font-size: 24px;
+	-fx-font-style: italic;
+    -fx-text-fill: white;
+	-fx-background-color: rgb(104, 14, 29);
+}
+
+.pane {
+    -fx-background-color:rgb(110, 110, 201);
+}
+
+#p1 {
+	-fx-font-size: 20px;
+}
+
+#p2 {
+	-fx-font-size: 20px;
+}
+
+#p3 {
+	-fx-font-size: 20px;
+}
+
+#p21 {
+	-fx-font-size: 20px;
+}
+
+#p22 {
+	-fx-font-size: 20px;
+}
+
+#p23 {
+	-fx-font-size: 20px;
+}
+
+#d1 {
+	-fx-font-size: 20px;
+}
+
+#d2 {
+	-fx-font-size: 20px;
+}
+
+#d3 {
+	-fx-font-size: 20px;
+}
+
+#p1Cash {
+	-fx-font-size: 28px;
+}
+
+#p2Cash {
+	-fx-font-size: 28px;
+}
+
+#p1Label {
+	-fx-font-size: 32px;
+}
+
+#p2Label {
+	-fx-font-size: 32px;
+}
+
+#dLabel {
+	-fx-font-size: 32px;
+}

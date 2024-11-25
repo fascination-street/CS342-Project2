@@ -1,0 +1,20 @@
+/*.button{
+	-fx-font-size: 14px;
+	-fx-font-weight: bold;
+	-fx-background-color: green
+}*/
+#titleText{
+    -fx-font-size: 54px;
+    -fx-font-family: "Impact", "Arial", serif;
+    -fx-font-weight: bold;
+    -fx-fill: rgba(22, 117, 63, 0.788);
+}
+
+.pane{
+	-fx-background-color: rgb(177, 178, 162);
+
+}
+
+
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<Pane xmlns:fx="http://javafx.com/fxml/1" 
+              fx:id = "root3" styleClass="pane" fx:controller = "Controller">
+        <Button fx:id="exitScreenButton" text="Exit" layoutX = "100" onAction="#exitGame"/>
+        <Button fx:id="returnButton" text="Return" layoutX = "500" onAction="#returnToGame"/>
+        <Text fx:id="sorryLabel" text="Couldn't get return to work, not going to make it work. Sorry, your game is over" layoutX = "300" layoutY = "200"/>
+</Pane>
